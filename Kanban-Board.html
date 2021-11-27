@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="container">
+        <div class="kanban-heading">
+            <strong class="kanban-heading-text">Astra Project-Kanban Board</strong>
+        </div>
+		<div class="geolocation">
+			<strong id="loc"></strong>
+		</div>
+        <div class="kanban-board">
+            <div class="kanban-block" id="backlog" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <b>Backlog &ensp;</b><b id="count1">0</b>
+				<br/>
+                <div class="task" id="task1" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-1</header>
+					<section style='padding:1px 0 0 15px;'><h4>Admin: List users</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>User Management</footer>
+					</span>
+                </div>
+                <div class="task" id="task2" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-2</header>
+					<section style='padding:1px 0 0 15px;'><h4>Admin: Approve user account</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>User Management</footer>
+					</span>
+                </div>
+                <div class="task" id="task3" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-3</header>
+					<section style='padding:1px 0 0 15px;'><h4>Admin: Block user account</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>User Management</footer>
+					</span>
+                </div>
+                <div class="task" id="task4" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-4</header>
+					<section style='padding:1px 0 0 15px;'><h4>User: Edit profile</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>Author Blogs</footer>
+					</span>
+                </div>
+                <div class="task" id="task5" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-5</header>
+					<section style='padding:1px 0 0 15px;'><h4>User: Create article</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>Author Blogs</footer>
+					</span>
+                </div>
+                <div class="task" id="task6" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-6</header>
+					<section style='padding:1px 0 0 15px;'><h4>User: Edit my article</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>Author Blogs</footer>
+					</span>
+                </div>
+				<div class="task" id="task7" draggable="true" ondragstart="drag(event)">
+                    <span>
+					<header style='padding:12px 0 1px 15px;'>L2A-7</header>
+					<section style='padding:1px 0 0 15px;'><h4>User: Review article</h4></section>
+					<footer style='border-top-style:double;padding:4px 0 12px 15px;font-size:12px;'><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/justify-left-1523572-1296587.png' alt='alternatetext' style='width:12px;height:12px;padding:2px 4px 0 0'>Author Blogs</footer>
+					</span>
+                </div>
+            </div>
+			<div class="kanban-block" id="selectedfordev" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <b>Selected for Dev &ensp;</b><b id="count2">0</b>
+				<br/>
+            </div>
+            <div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <b>In Progress &ensp;</b><b id="count3">0</b>
+				<br/>
+            </div>
+            <div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <b>Done &ensp;</b><b id="count4">0</b>
+				<br/>
+            </div>
+        </div>
+    </div>
+</body>
+<head>
+	<script type="text/javascript" src="C:\Users\admin\Desktop\Kanban-JS.js"></script>
+	<link rel="stylesheet" href="C:\Users\admin\Desktop\Kanban-CSS.css">
+    <title>Assignment1</title>
+</head>
+</html>

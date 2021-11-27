@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  min-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Didot;
+}
+
+.kanban-heading-text {
+  font-size: 1.8rem;
+  background-color: #d280ed;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.geolocation {
+  display: flex;
+  flex-direction: row;
+  font-family: Mrs Eaves;
+  padding-left: 20rem;
+}
+
+#loc {
+  font-size: 1.8rem;
+  background-color: #d280ed;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.kanban-board {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+}
+
+.kanban-block {
+  padding: 0.6rem;
+  width: 30.5%;
+  min-width: 14rem;
+  min-height: 4.5rem;
+  border-radius: 0.3rem;
+}
+
+#backlog {
+  background-color: #FE9B9B;
+  background-image:url('https://xfilespro.com/wp-content/uploads/2017/07/Drag-drop-icon.jpg');
+  background-repeat:no-repeat;
+  background-size: 160px 120px;
+  background-position:5rem 7rem;
+}
+
+#selectedfordev {
+  background-color: #FEFE9B;
+  background-image:url('https://xfilespro.com/wp-content/uploads/2017/07/Drag-drop-icon.jpg');
+  background-repeat:no-repeat;
+  background-size: 160px 120px;
+  background-position:5rem 7rem;
+}
+
+#inprogress {
+  background-color: #9BD0FE;
+  background-image:url('https://xfilespro.com/wp-content/uploads/2017/07/Drag-drop-icon.jpg');
+  background-repeat:no-repeat;
+  background-size: 160px 120px;
+  background-position:5rem 7rem;
+}
+
+#done {
+  background-color: #B5FE9B;
+  background-image:url('https://xfilespro.com/wp-content/uploads/2017/07/Drag-drop-icon.jpg');
+  background-repeat:no-repeat;
+  background-size: 160px 120px;
+  background-position:5rem 7rem;
+}
+
+
+.task {
+  background-color: white;
+  margin: 0.2rem 0rem 0.3rem 0rem;
+  border: 0.1rem solid black;
+  border-radius: 0.2rem;
+}
+
+#task-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 100%;
+  border: 0.25rem solid black;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+#backlog > b {
+	float: left;
+	background-color: #ed5358;
+}
+#selectedfordev > b {
+	float: left;
+	background-color: yellow;
+}
+#inprogress > b {
+	float: left;
+	background-color: #538eed;
+}
+#done > b {
+	float: left;
+	background-color: green;
+}
+
+#count {
+	float: right;
+}
+
